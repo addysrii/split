@@ -24,7 +24,7 @@ const onSubmit = async e =>{
     e.preventDefault();
 
     try{
-        const res=await axios.post('https://split-rr6o.onrender.com',formData)
+        const res=await axios.post('https://split-rr6o.onrender.com/api/users/register',formData)
         console.log(res.data)
         
              if(res.data){
