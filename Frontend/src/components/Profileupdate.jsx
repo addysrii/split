@@ -37,7 +37,7 @@ const ProfileSetup = () => {
                 }
             };
 
-            const res = await axios.put('http://localhost:5002/api/users/profile', formData, config);
+            const res = await axios.put('https://split-rr6o.onrender.com/api/users/profile', formData, config);
             console.log(res.data);
             alert('Profile updated successfully!');
         } catch (err) {
