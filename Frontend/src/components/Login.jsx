@@ -22,7 +22,7 @@ const Login = () => {
     const onSubmit = async e => {
         e.preventDefault(); // Prevents default form submission behavior
         try {
-            const res = await axios.post('http://localhost:5002/api/users/login', formData); // Sends POST request to /api/login
+            const res = await axios.post('https://split-rr6o.onrender.com/api/users/login', formData); // Sends POST request to /api/login
             console.log(res.data);
              if(res.data){
   
