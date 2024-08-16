@@ -13,7 +13,7 @@ const Dashboard = () => {
             }
 
             try {
-                const res = await axios.get('http://localhost:5002/api/user');
+                const res = await axios.get('https://split-rr6o.onrender.com/api/user');
                 console.log('User data:', res.data); // Log user data
                 setUserData(res.data);
             } catch (err) {
@@ -25,7 +25,7 @@ const Dashboard = () => {
     }, []);
 
     // Construct profile picture URL
-    const profilePictureURL = userData?.profilePicture ? `http://localhost:5002${userData.profilePicture}` : '';
+    const profilePictureURL = userData?.profilePicture ? `https://split-rr6o.onrender.com${userData.profilePicture}` : '';
 console.log(profilePictureURL);
     // Log the profile picture URL
     
